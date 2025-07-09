@@ -1,0 +1,17 @@
+img{
+    width: 450px;
+    /* height: 300px; */
+}
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
