@@ -65,6 +65,8 @@ a {
   cursor: pointer;
   padding: 10px 1.5rem;
   background-color: rgb(241, 241, 241);
+  position: relative;
+  bottom: 10vh;
 }
 .product-thumbnail {
   display: flex;
