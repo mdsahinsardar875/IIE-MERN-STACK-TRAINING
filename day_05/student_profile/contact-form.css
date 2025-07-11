@@ -1,76 +1,123 @@
-* {
+/* Background gradient and base styles */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+background-color: #0f1254;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-  min-height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-image: linear-gradient(to bottom right, #7bf3ff, #ffbdbd);
+/* Centering and styling the form container */
+.form-container {
+  /* background: #ffffff; */
+  background: linear-gradient(to bottom right, #f5f2f2, hsl(240, 2%, 56%));
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 35px 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
+/* Heading */
+h1 {
+  text-align: center;
+  color: #0072ff;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* Input fields and labels */
 label {
-  margin-bottom: 0.3rem;
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
   font-weight: 500;
-}
-input,
-textarea {
-  border: 1px solid hsl(0, 0%, 51%);
-  padding: 0.5rem 1rem;
-  resize: none;
-}
-button {
-  border: none;
-  font-weight: 500;
-  font-size: large;
-  width: 100%;
-  padding: 0.4rem 0.5rem;
+  font-size: 14px;
 }
 
-input,
-textarea,
-button {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Checkbox group (hobby + terms) */
+.hobby-container {
+  margin-bottom: 15px;
+}
+
+.hobby-container input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.hobby-container label {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: 400;
+  color: #444;
+}
+
+/* Bio textarea */
+textarea {
+  resize: none;
+  height: 80px;
+  font-family: inherit;
+}
+
+/* Buttons */
+button[type="submit"]{
+      width: 100%;
+  padding: 12px;
+  background-color: #039e1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+button[type="reset"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #e34141;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: #005fcc;
+}
+
+/* Country dropdown style */
+select {
+  appearance: none;
   background-color: white;
 }
-input:focus,
-textarea:focus,
-button:focus {
-  outline: 1px solid rgb(136, 136, 136);
-}
-
-form.contact-form {
-  width: 450px;
-  background: hsl(202.63deg 100% 95.73%);
-  /* background: hsl(0, 0%, 93%); */
-
-  padding: 2.5rem 2.5rem;
-  margin: 3rem auto;
-  box-shadow: 14px 15px 13px -16px;
-}
-
-h1.heading {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.form-content {
-  display: grid;
-  row-gap: 1rem;
-  margin: 1.3rem 0;
-}
-
-.form-group {
+.flexbox {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
 }
-
-button.primary {
-  color: white;
-  background: hsl(221, 100%, 58%);
+/* Optional: Responsive for mobile */
+@media (max-width: 480px) {
+  .form-container {
+    width: 90%;
+    padding: 25px 20px;
+  }
 }
