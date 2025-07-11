@@ -1,27 +1,27 @@
 body {
   height: 100vh;
   display: flex;
-  background-color: #000000;
+  background-color: transparent
 }
 .main {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column; /* Changed from row to column */
+  flex-direction: column; 
 }
 .navbar_1 {
-  /* width: 100%; */
+  
   height: 7%;
   background-color: #ffffff;
   color: #fff;
   display: flex;
-  flex-direction: row; /* Changed from column to row */
+  flex-direction: row; 
   align-items: center;
-  justify-content: space-between; /* Space out children */
-  padding: 0 40px; /* Add horizontal padding */
+  justify-content: space-between; 
+  padding: 0 40px; 
 }
 .navbar_1 img {
-  width: 120px; /* Adjusted for logo image */
+  width: 120px; 
   height: 40px;
   object-fit: contain;
 }
@@ -93,42 +93,46 @@ body {
   transition: color 0.2s;
 }
 .navbar_1_links a:hover {
-  color: #0056b3;    /* Optional: color on hover */
+  color: #0056b3;   
 }
 
 .navbar_2 {
-  /* width: 100%; */
-  height: 8%;
+  
   background-color: #004080;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 0 40px;
   color: #ffffff;
   font-family: Arial, sans-serif;
   font-size: 16px;
+  height: 8%;
+  gap: 40px;
 }
 
 .popular_courses label {
-  margin-right: 10px;
+ display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.popular_courses select {
   font-weight: bold;
   color: #ffffff;
 }
 
-.popular_courses select {
-  padding: 5px 10px;
-  border-radius: 4px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
+.navbar_LINKS_2 {
+  flex: 4;
+  display: flex;
+  justify-content: space-between;
+ 
 }
 
 .navbar_LINKS_2 ul {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+   color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 .navbar_LINKS_2 a {
@@ -136,6 +140,17 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
+  
+}
+
+.navbar-dots{
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 20px;
+  user-select: none;
+  display: flex;
+  align-items: center;
 }
 
 .navbar_LINKS_2 a:hover {
@@ -149,14 +164,13 @@ body {
 
 .threeBoxes {
   display: flex;
-  width: 100%; /* add this to take up full width */
+  width: 100%; 
   height: 400px;
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
   background-color: #fdffff;
-  padding: 0; /* add this to remove any padding */
-  margin: 0; /* add this to remove any margin */
+  padding: 0; 
   position: relative;
 }
 .threeBoxes img {
@@ -167,7 +181,7 @@ body {
   position: relative;
   top: -100px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-   background-color: #fff; /* add this to set the background color of the image to white */
+   background-color: #fff; 
 }
 .threeBoxes h2 {
   position: relative;
@@ -178,3 +192,50 @@ body {
   color: #000000;
   font: lighter;
 }
+
+.navbar_3 {
+  display: flex;
+  color: #000000;
+  background: #fffdfd;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 10px 0;
+}
+
+.trendingcourses_links ul {
+  display: flex;
+  background: #ffffff;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.trendingcourses_links li {
+  
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 10px 18px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.07);
+  font-weight: 500;
+}
+
+.trendingcourses_links a {
+  color: #004080;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.trendingcourses_links a:hover {
+  color: #007bff;
+}
+
+
+
+
+
+
+
