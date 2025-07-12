@@ -138,7 +138,7 @@ body {
   padding: 0;
   justify-content: flex-start;
   align-items: center;
-  width: auto; /* or remove this line */
+  
 }
 
 .navbar_LINKS_2 a {
@@ -208,6 +208,10 @@ body {
   margin: 30px 0 10px 0;
 }
 
+.trendingcourses_links {
+  margin-bottom: 30px;
+}
+
 .trendingcourses_links ul {
   display: flex;
   background: #ffffff;
@@ -217,6 +221,10 @@ body {
   margin: 0;
   justify-content: center;
   align-items: center;
+}
+
+.trendingcourses_links ul {
+  margin-bottom: 30px;
 }
 
 .trendingcourses_links li {
@@ -237,6 +245,64 @@ body {
 
 .trendingcourses_links a:hover {
   color: #007bff;
+}
+.eightboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.box {
+  width: 262px;
+  height: 265.6px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.box-img {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  padding: 20px 0;
+  margin-bottom: 80px; /* Add this line for spacing */
+}
+
+.box-img img {
+  max-width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.box-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-top: 1px solid #eee;
+  /* Optionally, you can use margin-top instead of margin-bottom above */
+  /* margin-top: 20px; */
+}
+
+.box-text h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #004080;
+  font-weight: 600;
 }
 
 
