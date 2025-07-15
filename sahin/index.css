@@ -510,3 +510,8 @@ nav {
 .character-image {
     animation: float 5s ease-in-out infinite;
 }
+.academics h4 :hover {
+    color: #ff4d7d;
+    
+}
+

@@ -50,7 +50,7 @@ main {
     width: 12px;
   }
   & .button {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color: #a00e0e;
     border-radius: 10px;
     padding: 5px;
@@ -58,13 +58,23 @@ main {
   }
 }
 
-label {
-  color: rgb(255, 96, 96);
-  background-color: #fff;
+button:hover {
+  background-color: #fff41a;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+.nav_item {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
   padding: 5px;
   border-radius: 10px;
   font-size: medium;
 }
+.nav_item:hover {
+  background: #bbb94b;
+  cursor: pointer;
+}
+
 button {
   color: rgb(255, 255, 255);
   background-color: #ff651e;
