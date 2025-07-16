@@ -129,21 +129,3 @@ h2 {
   font-weight: 600;
   margin-bottom: 12px;
 }
-.middel_banner {
-  width: 100vw;
-  height: 100vh;
-  max-width: 100vw;
-  max-height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.middel_banner img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}

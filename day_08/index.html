@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="heading">Welcome!</h1>
+      <!-- <button onclick="show()">Click</button> -->
+      <label for="name">Enter your name</label>
+      <input type="text" id="name" />
+      <button onclick="show()">greet me</button>
+    </main>
+ 
+    <script>
+      const heading = document.getElementById("heading");
+      const nameInput = document.getElementById("name");
+ 
+      function show() {
+        // // heading.innerText = "Hello World!";
+        // heading.textContent = "Hello World!";
+        heading.textContent = nameInput.value;
+      }
+    </script>
+  </body>
+</html>
