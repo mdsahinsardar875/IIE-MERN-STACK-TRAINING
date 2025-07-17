@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Change Page Background Color</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.3s ease;
+            background-color: #f0f0f0;
+        }
+
+        .main {
+            display: flex;
+            border: 5px solid black;
+            padding: 50px;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
+
+        .color-box {
+            width: 100px;
+            height: 150px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .color-box:hover {
+            transform: scale(1.1);
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .reset-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: unset;
+            /* background-color: #33333300; */
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            position: relative;
+            top: -66px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="color-box red" data-color="red"></div>
+        <div class="color-box blue" data-color="blue"></div>
+        <div class="color-box pink" data-color="pink"></div>
+        <div class="color-box yellow" data-color="yellow"></div>
+    </div>
+
+    <button class="reset-button" id="resetBtn">Reset Background</button>
+
+    <script>
+        const colorBoxes = document.querySelectorAll('.color-box');
+        const resetButton = document.getElementById('resetBtn');
+
+        const originalColor = '#f0f0f0';
+
+        colorBoxes.forEach(box => {
+            box.addEventListener('click', () => {
+                const selectedColor = box.getAttribute('data-color');
+                document.body.style.backgroundColor = selectedColor;
+                // resetButton.style.backgroundColor = selectedColor;
+            });
+        });
+
+        resetButton.addEventListener('click', () => {
+            document.body.style.backgroundColor = originalColor;
+        });
+    </script>
+
+</body>
+
+</html>
