@@ -34,6 +34,7 @@ body {
   text-align: center;
   border: 2px solid black;
   cursor: pointer;
+  object-fit: cover;
 }
 
 .color-box {
