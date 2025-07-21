@@ -10,15 +10,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f0f0f0;
+    /* background: #ffffff; */
+    background-image: linear-gradient(to  right, #d2d24c, #8b00e1);
 }
 
 #container {
     background: #222;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 20px 20px 5px 0 rgba(0, 0, 0, 0.3);
     width: 300px;
+    scale: 1.2;
+}
+.different {
+    background: #fa5307 !important;
+}
+.equal {
+    background: #1d9408 !important;
 }
 
 .display input {
@@ -31,7 +39,7 @@ body {
     border-radius: 10px;
     margin-bottom: 20px;
     background-color: #eaeaea;
-    color: #333;
+    color: #000000;
 }
 
 .buttons .row {
@@ -44,12 +52,13 @@ body {
     width: 58px;
     height: 58px;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     font-size: 20px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    background-color: #444;
+    background-color: #404040;
     color: white;
+    
 }
 
 .button:hover {

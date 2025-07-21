@@ -9,12 +9,13 @@
   <body>
     <div id="container">
       <div class="display">
-        <input type="text" id="display" placeholder="0"  />
+        <input type="text" id="display" placeholder="0" />
       </div>
       <div class="buttons">
         <div class="row">
-          <button class="button" onclick="clear()">C</button>
-          <button class="button" onclick="back()">X</button>
+        
+          <button class="button different" onclick="clearExp()">C</button>
+          <button class="button different" onclick="back()">X</button>
           <button class="button" onclick="appendToDisplay('%')">%</button>
           <button class="button" onclick="appendToDisplay('/')">/</button>
         </div>
@@ -40,7 +41,7 @@
           <button class="button" onclick="appendToDisplay('00')">00</button>
           <button class="button" onclick="appendToDisplay('0')">0</button>
           <button class="button" onclick="appendToDisplay('.')">.</button>
-          <button class="button" onclick="result()">=</button>
+          <button class="button equal" onclick="result()">=</button>
         </div>
       </div>
     </div>
