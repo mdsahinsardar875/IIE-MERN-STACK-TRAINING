@@ -10,6 +10,7 @@ const Stopwatch = () => {
       timerRef.current = setInterval(() => {
         setTime((prevTime) => prevTime + 10);
       }, 10);
+      
     } else if (!isActive && time !== 0) {
       clearInterval(timerRef.current);
     }
