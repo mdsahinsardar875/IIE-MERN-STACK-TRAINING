@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "../components/button";
+import Button from "../components/Button";
 
 const Home = () => {
   return (
@@ -9,15 +9,18 @@ const Home = () => {
         <h1 className="text-6xl font-bold mb-4">📝</h1>
         <h1 className="text-3xl font-bold mb-4">Welcome to Notes App</h1>
         <p className="text-gray-600 text-lg mb-6">
-          Quickly create, edit, and manage your notes - all in one place. 
+          Quickly create, edit, and manage your notes - all in one place.
           Simple, fast, and stored in your browser.
         </p>
         <Link to="/Note">
-        <Button text="View My Notes"/>
+          <Button text="View My Notes" />
+        </Link>
+        <Link to="/addnote">
+          <button text="Add New Note"></button>
         </Link>
       </div>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;
